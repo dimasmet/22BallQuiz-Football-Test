@@ -20,9 +20,15 @@ public class AnswerButton : MonoBehaviour
     [SerializeField] private Image _sourceImage;
 
     [Header("Sprites to button")]
-    [SerializeField] private Sprite _sourceSprite;
+    private Sprite _sourceSprite;
     [SerializeField] private Sprite _trueSprite;
-    [SerializeField] private Sprite _falseSprite;
+    private Sprite _falseSprite;
+
+    [Header("Sprites to dark mode")]
+    [SerializeField] private Sprite _sourceSpriteWhite;
+    [SerializeField] private Sprite _falseSpriteWhite;
+    [SerializeField] private Sprite _sourceSpriteDark;
+    [SerializeField] private Sprite _falseSpriteDark;
 
     private State currentState;
 
@@ -30,8 +36,32 @@ public class AnswerButton : MonoBehaviour
     {
         _thisButton.onClick.AddListener(() =>
         {
-
+            AppHandler.Instance.ChoiceAnswerButton(_numberAnswer, this);
         });
+    }
+
+    private void Start()
+    {
+        ChangeMode(ScreenSettings.DarkMode.None);
+    }
+
+    public void ChangeMode(ScreenSettings.DarkMode mode)
+    {
+        switch (mode)
+        {
+            case ScreenSettings.DarkMode.None:
+                _sourceSprite = _sourceSpriteWhite;
+                _falseSprite = _falseSpriteWhite;
+                _textAnswer.color = Color.black;
+                break;
+            case ScreenSettings.DarkMode.Dark:
+                _sourceSprite = _sourceSpriteDark;
+                _falseSprite = _falseSpriteDark;
+                _textAnswer.color = Color.white;
+                break;
+        }
+
+        _sourceImage.sprite = _sourceSprite;
     }
 
     public void SetTextAnswer(string answerString)

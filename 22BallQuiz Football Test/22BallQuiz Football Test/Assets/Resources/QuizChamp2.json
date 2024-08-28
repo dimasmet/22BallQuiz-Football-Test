@@ -1,0 +1,110 @@
+{
+    "quiz": {
+        "number": 6,
+        "questions": [
+            {
+                "textQuestion": "Which country won the first FIFA World Cup?",
+                "numberTrueAnswer": 3,
+                "answers": [
+                    { "textAnswer": "Brazil" },
+                    { "textAnswer": "Argentina" },
+                    { "textAnswer": "Italy" },
+                    { "textAnswer": "Uruguay" }
+                ]
+            },
+            {
+                "textQuestion": "Which team won the FIFA World Cup in 1982?",
+                "numberTrueAnswer": 2,
+                "answers": [
+                    { "textAnswer": "France" },
+                    { "textAnswer": "Germany" },
+                    { "textAnswer": "Italy" },
+                    { "textAnswer": "Argentina" }
+                ]
+            },
+            {
+                "textQuestion": "Which country hosted the FIFA World Cup in 1978?",
+                "numberTrueAnswer": 1,
+                "answers": [
+                    { "textAnswer": "Mexico" },
+                    { "textAnswer": "Argentina" },
+                    { "textAnswer": "Spain" },
+                    { "textAnswer": "Germany" }
+                ]
+            },
+            {
+                "textQuestion": "Which country did the team that won the FIFA World Cup in 1990 represent?",
+                "numberTrueAnswer": 2,
+                "answers": [
+                    { "textAnswer": "France" },
+                    { "textAnswer": "Italy" },
+                    { "textAnswer": "Germany" },
+                    { "textAnswer": "Argentina" }
+                ]
+            },
+            {
+                "textQuestion": "Which country won the FIFA World Cup in 2018?",
+                "numberTrueAnswer": 1,
+                "answers": [
+                    { "textAnswer": "France" },
+                    { "textAnswer": "Germany" },
+                    { "textAnswer": "Croatia" },
+                    { "textAnswer": "Brazil" }
+                ]
+            },
+            {
+                "textQuestion": "In which year was the FIFA World Cup held in Asia for the first time?",
+                "numberTrueAnswer": 1,
+                "answers": [
+                    { "textAnswer": "2002" },
+                    { "textAnswer": "1998" },
+                    { "textAnswer": "2010" },
+                    { "textAnswer": "2014" }
+                ]
+            },
+            {
+                "textQuestion": "Which team lost the final of the 2014 FIFA World Cup?",
+                "numberTrueAnswer": 2,
+                "answers": [
+                    { "textAnswer": "Netherlands" },
+                    { "textAnswer": "Germany" },
+                    { "textAnswer": "Argentina" },
+                    { "textAnswer": "Brazil" }
+                ]
+            },
+            {
+                "textQuestion": "Which country did the coach of the team that won the FIFA World Cup in 1998 represent?",
+                "numberTrueAnswer": 2,
+                "answers": [
+                    { "textAnswer": "Italy" },
+                    { "textAnswer": "Brazil" },
+                    { "textAnswer": "France" },
+                    { "textAnswer": "Argentina" }
+                ]
+            },
+            {
+                "textQuestion": "In which year did Germany win the FIFA World Cup for the first time?",
+                "numberTrueAnswer": 0,
+                "answers": [
+                    { "textAnswer": "1954" },
+                    { "textAnswer": "1974" },
+                    { "textAnswer": "1990" },
+                    { "textAnswer": "2006" }
+                ]
+            },
+            {
+                "textQuestion": "Which country won the FIFA World Cup in 1962?",
+                "numberTrueAnswer": 2,
+                "answers": [
+                    { "textAnswer": "Argentina" },
+                    { "textAnswer": "Italy" },
+                    { "textAnswer": "Brazil" },
+                    { "textAnswer": "England" }
+                ]
+            }
+        ]
+    }
+
+
+}
+

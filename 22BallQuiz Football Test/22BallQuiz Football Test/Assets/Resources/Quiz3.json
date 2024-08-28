@@ -1,0 +1,109 @@
+{
+    "quiz": {
+        "number": 3,
+        "questions": [
+            {
+                "textQuestion": "Which country does the football club AS Roma represent?",
+                "numberTrueAnswer": 1,
+                "answers": [
+                    { "textAnswer": "Spain" },
+                    { "textAnswer": "Italy" },
+                    { "textAnswer": "Greece" },
+                    { "textAnswer": "France" }
+                ]
+            },
+            {
+                "textQuestion": "Which country does the football club Tottenham Hotspur represent?",
+                "numberTrueAnswer": 3,
+                "answers": [
+                    { "textAnswer": "Ireland" },
+                    { "textAnswer": "Scotland" },
+                    { "textAnswer": "Wales" },
+                    { "textAnswer": "England" }
+                ]
+            },
+            {
+                "textQuestion": "Which country does the football club Valencia represent?",
+                "numberTrueAnswer": 0,
+                "answers": [
+                    { "textAnswer": "Spain" },
+                    { "textAnswer": "Portugal" },
+                    { "textAnswer": "Italy" },
+                    { "textAnswer": "France" }
+                ]
+            },
+            {
+                "textQuestion": "Which country does the football club Marseille represent?",
+                "numberTrueAnswer": 1,
+                "answers": [
+                    { "textAnswer": "Belgium" },
+                    { "textAnswer": "France" },
+                    { "textAnswer": "Spain" },
+                    { "textAnswer": "Portugal" }
+                ]
+            },
+            {
+                "textQuestion": "Which country does the football club PSV Eindhoven represent?",
+                "numberTrueAnswer": 0,
+                "answers": [
+                    { "textAnswer": "Netherlands" },
+                    { "textAnswer": "Germany" },
+                    { "textAnswer": "Denmark" },
+                    { "textAnswer": "Sweden" }
+                ]
+            },
+            {
+                "textQuestion": "Which country does the football club Lazio represent?",
+                "numberTrueAnswer": 0,
+                "answers": [
+                    { "textAnswer": "Italy" },
+                    { "textAnswer": "Spain" },
+                    { "textAnswer": "Greece" },
+                    { "textAnswer": "Portugal" }
+                ]
+            },
+            {
+                "textQuestion": "Which country does the football club Villarreal represent?",
+                "numberTrueAnswer": 0,
+                "answers": [
+                    { "textAnswer": "Spain" },
+                    { "textAnswer": "France" },
+                    { "textAnswer": "Italy" },
+                    { "textAnswer": "Portugal" }
+                ]
+            },
+            {
+                "textQuestion": "Which country does the football club Galatasaray represent?",
+                "numberTrueAnswer": 1,
+                "answers": [
+                    { "textAnswer": "Greece" },
+                    { "textAnswer": "Turkey" },
+                    { "textAnswer": "Italy" },
+                    { "textAnswer": "Spain" }
+                ]
+            },
+            {
+                "textQuestion": "Which country does the football club Shakhtar Donetsk represent?",
+                "numberTrueAnswer": 0,
+                "answers": [
+                    { "textAnswer": "Ukraine" },
+                    { "textAnswer": "Russia" },
+                    { "textAnswer": "Belarus" },
+                    { "textAnswer": "Kazakhstan" }
+                ]
+            },
+            {
+                "textQuestion": "Which country does the football club Monaco represent?",
+                "numberTrueAnswer": 1,
+                "answers": [
+                    { "textAnswer": "France" },
+                    { "textAnswer": "Monaco" },
+                    { "textAnswer": "Italy" },
+                    { "textAnswer": "Switzerland" }
+                ]
+            }
+        ]
+    }
+
+}
+

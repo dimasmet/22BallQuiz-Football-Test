@@ -1,0 +1,110 @@
+{
+    "quiz": {
+        "number": 7,
+        "questions": [
+            {
+                "textQuestion": "Which country won the FIFA World Cup in 2006?",
+                "numberTrueAnswer": 2,
+                "answers": [
+                    { "textAnswer": "France" },
+                    { "textAnswer": "Germany" },
+                    { "textAnswer": "Italy" },
+                    { "textAnswer": "Brazil" }
+                ]
+            },
+            {
+                "textQuestion": "Who was the captain of Argentina when they won the FIFA World Cup in 1986?",
+                "numberTrueAnswer": 0,
+                "answers": [
+                    { "textAnswer": "Diego Maradona" },
+                    { "textAnswer": "Gabriel Batistuta" },
+                    { "textAnswer": "Mario Kempes" },
+                    { "textAnswer": "Juan Sebastián Verón" }
+                ]
+            },
+            {
+                "textQuestion": "Which country won the FIFA World Cup in 1970?",
+                "numberTrueAnswer": 1,
+                "answers": [
+                    { "textAnswer": "Italy" },
+                    { "textAnswer": "Brazil" },
+                    { "textAnswer": "England" },
+                    { "textAnswer": "Germany" }
+                ]
+            },
+            {
+                "textQuestion": "Which country was the first to win three FIFA World Cups?",
+                "numberTrueAnswer": 3,
+                "answers": [
+                    { "textAnswer": "Germany" },
+                    { "textAnswer": "Italy" },
+                    { "textAnswer": "Argentina" },
+                    { "textAnswer": "Brazil" }
+                ]
+            },
+            {
+                "textQuestion": "Which country won the FIFA World Cup in 1954, becoming the first country to win the World Cup in Europe?",
+                "numberTrueAnswer": 0,
+                "answers": [
+                    { "textAnswer": "Germany" },
+                    { "textAnswer": "Italy" },
+                    { "textAnswer": "England" },
+                    { "textAnswer": "France" }
+                ]
+            },
+            {
+                "textQuestion": "Who scored the winning goal in the final of the 2010 FIFA World Cup?",
+                "numberTrueAnswer": 2,
+                "answers": [
+                    { "textAnswer": "Lionel Messi" },
+                    { "textAnswer": "Cristiano Ronaldo" },
+                    { "textAnswer": "Andrés Iniesta" },
+                    { "textAnswer": "Thomas Müller" }
+                ]
+            },
+            {
+                "textQuestion": "Which country won the FIFA World Cup in 1994?",
+                "numberTrueAnswer": 1,
+                "answers": [
+                    { "textAnswer": "Italy" },
+                    { "textAnswer": "Brazil" },
+                    { "textAnswer": "Germany" },
+                    { "textAnswer": "Argentina" }
+                ]
+            },
+            {
+                "textQuestion": "Which country did the team that won the FIFA World Cup in 1974 represent?",
+                "numberTrueAnswer": 1,
+                "answers": [
+                    { "textAnswer": "Netherlands" },
+                    { "textAnswer": "Germany" },
+                    { "textAnswer": "Brazil" },
+                    { "textAnswer": "Argentina" }
+                ]
+            },
+            {
+                "textQuestion": "Which country won the FIFA World Cup in 2010?",
+                "numberTrueAnswer": 1,
+                "answers": [
+                    { "textAnswer": "Germany" },
+                    { "textAnswer": "Spain" },
+                    { "textAnswer": "Italy" },
+                    { "textAnswer": "France" }
+                ]
+            },
+            {
+                "textQuestion": "Which country won the FIFA World Cup in 1986?",
+                "numberTrueAnswer": 1,
+                "answers": [
+                    { "textAnswer": "Brazil" },
+                    { "textAnswer": "Argentina" },
+                    { "textAnswer": "Germany" },
+                    { "textAnswer": "Italy" }
+                ]
+            }
+        ]
+    }
+
+
+}
+

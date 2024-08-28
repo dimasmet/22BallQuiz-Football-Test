@@ -1,0 +1,110 @@
+{
+    "quiz": {
+        "number": 5,
+        "questions": [
+            {
+                "textQuestion": "In which year did the first FIFA World Cup take place?",
+                "numberTrueAnswer": 1,
+                "answers": [
+                    { "textAnswer": "1928" },
+                    { "textAnswer": "1930" },
+                    { "textAnswer": "1934" },
+                    { "textAnswer": "1940" }
+                ]
+            },
+            {
+                "textQuestion": "Which country won the FIFA World Cup in 1958?",
+                "numberTrueAnswer": 2,
+                "answers": [
+                    { "textAnswer": "Argentina" },
+                    { "textAnswer": "Uruguay" },
+                    { "textAnswer": "Brazil" },
+                    { "textAnswer": "France" }
+                ]
+            },
+            {
+                "textQuestion": "In 1966, the FIFA World Cup was held in England. Which team won the tournament?",
+                "numberTrueAnswer": 1,
+                "answers": [
+                    { "textAnswer": "Germany" },
+                    { "textAnswer": "England" },
+                    { "textAnswer": "Brazil" },
+                    { "textAnswer": "Argentina" }
+                ]
+            },
+            {
+                "textQuestion": "Which country won the FIFA World Cup in 1998 when it was held in France?",
+                "numberTrueAnswer": 1,
+                "answers": [
+                    { "textAnswer": "Brazil" },
+                    { "textAnswer": "France" },
+                    { "textAnswer": "Italy" },
+                    { "textAnswer": "Netherlands" }
+                ]
+            },
+            {
+                "textQuestion": "In 2002, the FIFA World Cup was held in two countries for the first time. Name them.",
+                "numberTrueAnswer": 1,
+                "answers": [
+                    { "textAnswer": "France and Germany" },
+                    { "textAnswer": "Japan and South Korea" },
+                    { "textAnswer": "Spain and Portugal" },
+                    { "textAnswer": "Mexico and USA" }
+                ]
+            },
+            {
+                "textQuestion": "Who was the top scorer of the 2014 FIFA World Cup in Brazil?",
+                "numberTrueAnswer": 3,
+                "answers": [
+                    { "textAnswer": "Neymar" },
+                    { "textAnswer": "Lionel Messi" },
+                    { "textAnswer": "Thomas Müller" },
+                    { "textAnswer": "James Rodríguez" }
+                ]
+            },
+            {
+                "textQuestion": "Which country did the team that won the FIFA World Cup in 2010 represent?",
+                "numberTrueAnswer": 1,
+                "answers": [
+                    { "textAnswer": "Germany" },
+                    { "textAnswer": "Spain" },
+                    { "textAnswer": "Italy" },
+                    { "textAnswer": "France" }
+                ]
+            },
+            {
+                "textQuestion": "Which country did the coach of the team that won the FIFA World Cup in 1986 represent?",
+                "numberTrueAnswer": 1,
+                "answers": [
+                    { "textAnswer": "Brazil" },
+                    { "textAnswer": "Argentina" },
+                    { "textAnswer": "Germany" },
+                    { "textAnswer": "Italy" }
+                ]
+            },
+            {
+                "textQuestion": "How many times has Brazil won the FIFA World Cup as of 2024?",
+                "numberTrueAnswer": 1,
+                "answers": [
+                    { "textAnswer": "4" },
+                    { "textAnswer": "5" },
+                    { "textAnswer": "6" },
+                    { "textAnswer": "7" }
+                ]
+            },
+            {
+                "textQuestion": "Which country won the FIFA World Cup in 1994?",
+                "numberTrueAnswer": 2,
+                "answers": [
+                    { "textAnswer": "Germany" },
+                    { "textAnswer": "Italy" },
+                    { "textAnswer": "Brazil" },
+                    { "textAnswer": "Netherlands" }
+                ]
+            }
+        ]
+    }
+
+
+}
+

@@ -1,0 +1,109 @@
+{
+    "quiz": {
+        "number": 4,
+        "questions": [
+            {
+                "textQuestion": "Which country does the football club Napoli represent?",
+                "numberTrueAnswer": 1,
+                "answers": [
+                    { "textAnswer": "Spain" },
+                    { "textAnswer": "Italy" },
+                    { "textAnswer": "Greece" },
+                    { "textAnswer": "Portugal" }
+                ]
+            },
+            {
+                "textQuestion": "Which country does the football club Everton represent?",
+                "numberTrueAnswer": 1,
+                "answers": [
+                    { "textAnswer": "Ireland" },
+                    { "textAnswer": "England" },
+                    { "textAnswer": "Scotland" },
+                    { "textAnswer": "Wales" }
+                ]
+            },
+            {
+                "textQuestion": "Which country does the football club Rangers represent?",
+                "numberTrueAnswer": 1,
+                "answers": [
+                    { "textAnswer": "Ireland" },
+                    { "textAnswer": "Scotland" },
+                    { "textAnswer": "Wales" },
+                    { "textAnswer": "England" }
+                ]
+            },
+            {
+                "textQuestion": "Which country does the football club Monaco represent?",
+                "numberTrueAnswer": 1,
+                "answers": [
+                    { "textAnswer": "France" },
+                    { "textAnswer": "Monaco" },
+                    { "textAnswer": "Italy" },
+                    { "textAnswer": "Switzerland" }
+                ]
+            },
+            {
+                "textQuestion": "Which country does the football club Red Star Belgrade represent?",
+                "numberTrueAnswer": 1,
+                "answers": [
+                    { "textAnswer": "Croatia" },
+                    { "textAnswer": "Serbia" },
+                    { "textAnswer": "Bosnia and Herzegovina" },
+                    { "textAnswer": "Montenegro" }
+                ]
+            },
+            {
+                "textQuestion": "Which country does the football club Celtic represent?",
+                "numberTrueAnswer": 1,
+                "answers": [
+                    { "textAnswer": "Ireland" },
+                    { "textAnswer": "Scotland" },
+                    { "textAnswer": "Wales" },
+                    { "textAnswer": "England" }
+                ]
+            },
+            {
+                "textQuestion": "Which country does the football club Fenerbahçe represent?",
+                "numberTrueAnswer": 1,
+                "answers": [
+                    { "textAnswer": "Greece" },
+                    { "textAnswer": "Turkey" },
+                    { "textAnswer": "Italy" },
+                    { "textAnswer": "Spain" }
+                ]
+            },
+            {
+                "textQuestion": "Which country does the football club Dinamo Zagreb represent?",
+                "numberTrueAnswer": 0,
+                "answers": [
+                    { "textAnswer": "Croatia" },
+                    { "textAnswer": "Serbia" },
+                    { "textAnswer": "Bosnia and Herzegovina" },
+                    { "textAnswer": "Slovenia" }
+                ]
+            },
+            {
+                "textQuestion": "Which country does the football club Anderlecht represent?",
+                "numberTrueAnswer": 1,
+                "answers": [
+                    { "textAnswer": "Netherlands" },
+                    { "textAnswer": "Belgium" },
+                    { "textAnswer": "France" },
+                    { "textAnswer": "Germany" }
+                ]
+            },
+            {
+                "textQuestion": "Which country does the football club Olympiacos represent?",
+                "numberTrueAnswer": 0,
+                "answers": [
+                    { "textAnswer": "Greece" },
+                    { "textAnswer": "Italy" },
+                    { "textAnswer": "Turkey" },
+                    { "textAnswer": "Cyprus" }
+                ]
+            }
+        ]
+    }
+
+}
+
