@@ -43,6 +43,8 @@ public class ScreenSettings : MonoBehaviour
 
     private void Awake()
     {
+        Application.targetFrameRate = 90;
+
         _closeBtn.onClick.AddListener(() =>
         {
             _panelText.SetActive(false);
@@ -60,6 +62,7 @@ public class ScreenSettings : MonoBehaviour
             _panelText.SetActive(true);
 
             _privacy.gameObject.SetActive(true);
+            _privacy.transform.parent.position = new Vector2(_privacy.transform.parent.position.x, 0);
             _terms.gameObject.SetActive(false);
         });
 
@@ -76,6 +79,7 @@ public class ScreenSettings : MonoBehaviour
 
             _privacy.gameObject.SetActive(false);
             _terms.gameObject.SetActive(true);
+            _terms.transform.parent.position = new Vector2(_terms.transform.parent.position.x, 0);
         });
 
         _appThemeBtn.onClick.AddListener(() =>

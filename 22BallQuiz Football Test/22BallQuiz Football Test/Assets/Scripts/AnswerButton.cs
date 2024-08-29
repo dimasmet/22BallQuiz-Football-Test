@@ -20,9 +20,9 @@ public class AnswerButton : MonoBehaviour
     [SerializeField] private Image _sourceImage;
 
     [Header("Sprites to button")]
-    private Sprite _sourceSprite;
+    [SerializeField] private Sprite _sourceSprite;
     [SerializeField] private Sprite _trueSprite;
-    private Sprite _falseSprite;
+    [SerializeField] private Sprite _falseSprite;
 
     [Header("Sprites to dark mode")]
     [SerializeField] private Sprite _sourceSpriteWhite;
@@ -39,13 +39,11 @@ public class AnswerButton : MonoBehaviour
         _thisButton.onClick.AddListener(() =>
         {
             if (isActive)
+            {
                 AppHandler.Instance.ChoiceAnswerButton(_numberAnswer, this);
+                isActive = false;
+            }
         });
-    }
-
-    private void Start()
-    {
-        ChangeMode(ScreenSettings.DarkMode.None);
     }
 
     public void ChangeMode(ScreenSettings.DarkMode mode)

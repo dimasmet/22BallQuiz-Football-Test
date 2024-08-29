@@ -2,9 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using System;
 
 public class ScreenQuestion : MonoBehaviour
 {
+    public static Action OnChoicedAnswer;
+
+    [SerializeField] private Image _imgQuiz;
     [SerializeField] private Button _nextAnswerBtn;
     [SerializeField] private Text _numberQuestionText;
 
@@ -23,11 +27,23 @@ public class ScreenQuestion : MonoBehaviour
     private void Start()
     {
         ScreenSettings.OnChangeMode += ChangeMode;
+        OnChoicedAnswer += ChoicedAnswer;
     }
 
     private void OnDestroy()
     {
         ScreenSettings.OnChangeMode -= ChangeMode;
+        OnChoicedAnswer -= ChoicedAnswer;
+    }
+
+    public void SetSpriteImage(Sprite sprite)
+    {
+        _imgQuiz.sprite = sprite;
+    }
+
+    private void ChoicedAnswer()
+    {
+        _nextAnswerBtn.interactable = true;
     }
 
     private void ChangeMode(ScreenSettings.DarkMode mode)
@@ -56,6 +72,7 @@ public class ScreenQuestion : MonoBehaviour
 
     public void Show(Question question, int numberQuestion)
     {
+        _nextAnswerBtn.interactable = false;
          _numberQuestionText.text = (numberQuestion + 1).ToString();
          _questionText.text = question.textQuestion;
 

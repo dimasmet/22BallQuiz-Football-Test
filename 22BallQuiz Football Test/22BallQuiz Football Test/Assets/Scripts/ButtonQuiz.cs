@@ -2,9 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using System;
 
 public class ButtonQuiz : MonoBehaviour
 {
+    public static Action OnChangeResultMaxUser;
+
     [SerializeField] private Button _thisButton;
 
     [SerializeField] private Image _ImageQuiz;
@@ -12,11 +15,15 @@ public class ButtonQuiz : MonoBehaviour
     [SerializeField] private Text _difficultyText;
     [SerializeField] private Text _hashtagText;
 
+    [SerializeField] private Text _maxResultUserText;
+
     private int numberQuiz;
 
     [Header("Theme")]
     [SerializeField] private Image _imgBackground;
     [SerializeField] private Color _colorDark;
+
+    private QuizUserResult quizUser;
 
     private void Awake()
     {
@@ -43,13 +50,30 @@ public class ButtonQuiz : MonoBehaviour
         }
     }
 
-    public void InitButton(ViewDataQuiz viewData)
+    public void InitButton(ViewDataQuiz viewData, QuizUserResult quizUser)
     {
+        this.quizUser = quizUser;
         numberQuiz = viewData.number;
 
+        _maxResultUserText.text = "Max result " + this.quizUser.resultMax + "/10";
         _ImageQuiz.sprite = viewData.imageQuiz;
         _nameQuizText.text = viewData.nameQuiz;
         _difficultyText.text = viewData.difficulty;
         _hashtagText.text = viewData.hashtag;
+    }
+
+    private void Start()
+    {
+        OnChangeResultMaxUser += UpdateInfoQuiz;
+    }
+
+    private void OnDestroy()
+    {
+        OnChangeResultMaxUser -= UpdateInfoQuiz;
+    }
+
+    private void UpdateInfoQuiz()
+    {
+        _maxResultUserText.text = "Max result " + this.quizUser.resultMax + "/10";
     }
 }

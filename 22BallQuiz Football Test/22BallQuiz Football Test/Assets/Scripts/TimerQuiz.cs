@@ -19,12 +19,27 @@ public class TimerQuiz : MonoBehaviour
     {
         OnStartTimer += StartTimer;
         OnStopTimer += StopTimer;
+        ScreenSettings.OnChangeMode += ChangeMode;
+    }
+
+    private void ChangeMode(ScreenSettings.DarkMode mode)
+    {
+        switch (mode)
+        {
+            case ScreenSettings.DarkMode.None:
+                timerText.color = Color.black;
+                break;
+            case ScreenSettings.DarkMode.Dark:
+                timerText.color = Color.white;
+                break;
+        }
     }
 
     private void OnDestroy()
     {
         OnStartTimer -= StartTimer;
         OnStopTimer -= StopTimer;
+        ScreenSettings.OnChangeMode -= ChangeMode;
     }
 
     public void StartTimer()

@@ -9,6 +9,19 @@ public class QuizWrapper
     public Quiz quiz;
 }
 
+[System.Serializable]
+public class QuizUserResult
+{
+    public int number;
+    public int resultMax;
+}
+
+[System.Serializable]
+public class QuizUserData
+{
+    public List<QuizUserResult> quizUserResults;
+}
+
 public class AppHandler : MonoBehaviour
 {
     public static AppHandler Instance;
@@ -37,6 +50,9 @@ public class AppHandler : MonoBehaviour
 
     [SerializeField] private ScreenQuestion _screenQuestion;
     [SerializeField] private ScreenResult _screenResult;
+    [SerializeField] private ScreenHome _screenHome;
+
+    [SerializeField] private QuizUserData quizUserData;
 
     private Quiz currentQuiz;
     private int numberQuestion;
@@ -46,9 +62,17 @@ public class AppHandler : MonoBehaviour
 
     private int score = 0;
 
-    private void Start()
+    public void StartPoint()
     {
         TimerQuiz.OnEndTimer += TimerEnd;
+
+        string json = PlayerPrefs.GetString("JsonResultQuizMax");
+        if (json != "")
+        {
+            quizUserData = JsonUtility.FromJson<QuizUserData>(json);
+        }
+
+        _screenHome.StartInit(quizUserData);
     }
 
     private void OnDestroy()
@@ -72,6 +96,8 @@ public class AppHandler : MonoBehaviour
         isNext = true;
 
         TimerQuiz.OnStartTimer?.Invoke();
+
+        _screenQuestion.SetSpriteImage(_screenHome.GetImageQuiz(numberQuiz));
         NextQuestion();
     }
 
@@ -107,9 +133,27 @@ public class AppHandler : MonoBehaviour
             else
             {
                 _screenResult.ShowResult(ScreenResult.Result.Success, score);
+                CheckResultUser(numberQuiz, score);
                 TimerQuiz.OnStopTimer?.Invoke();
             }
         }
+    }
+
+    private void CheckResultUser(int numberQuiz, int score)
+    {
+        if (quizUserData.quizUserResults[numberQuiz].resultMax < score)
+        {
+            quizUserData.quizUserResults[numberQuiz].resultMax = score;
+            SaveResultsUser();
+
+            ButtonQuiz.OnChangeResultMaxUser?.Invoke();
+        }
+    }
+
+    private void SaveResultsUser()
+    {
+        string json = JsonUtility.ToJson(quizUserData);
+        PlayerPrefs.SetString("JsonResultQuizMax", json);
     }
 
     private void TimerEnd()
@@ -131,6 +175,8 @@ public class AppHandler : MonoBehaviour
 
             isNext = true;
         }
+
+        ScreenQuestion.OnChoicedAnswer?.Invoke();
     }
 
     private void GetQuizFromFile(string nameFile, List<Quiz> quizzes)

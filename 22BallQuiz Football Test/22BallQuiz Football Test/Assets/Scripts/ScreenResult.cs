@@ -55,7 +55,6 @@ public class ScreenResult : MonoBehaviour
                 _title4.color = Color.black;
                 _resultText.color = Color.black;
 
-                _panel.GetComponent<Image>().color = Color.white;
                 break;
             case ScreenSettings.DarkMode.Dark:
                 _panelImage1.sprite = _panelDark;
@@ -66,7 +65,6 @@ public class ScreenResult : MonoBehaviour
                 _title4.color = Color.white;
                 _resultText.color = Color.white;
 
-                _panel.GetComponent<Image>().color = Color.black;
                 break;
         }
     }

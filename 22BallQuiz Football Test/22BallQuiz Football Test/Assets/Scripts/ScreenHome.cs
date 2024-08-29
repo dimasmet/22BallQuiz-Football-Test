@@ -58,6 +58,11 @@ public class ScreenHome : MonoBehaviour
         });
     }
 
+    public Sprite GetImageQuiz(int num)
+    {
+        return _viewDataQuizzes[num].imageQuiz;
+    }
+
     private void ChangeMode(ScreenSettings.DarkMode mode)
     {
         switch (mode)
@@ -85,7 +90,7 @@ public class ScreenHome : MonoBehaviour
         _typeChampionshipBtn.ChangeModeTheme(mode);
     }
 
-    private void Start()
+    public void StartInit(QuizUserData quizUserData)
     {
         Transform container;
 
@@ -101,7 +106,7 @@ public class ScreenHome : MonoBehaviour
             ButtonQuiz buttonQuiz = Instantiate(_prefabButtonQuiz, container);
             buttonQuiz.gameObject.SetActive(true);
 
-            buttonQuiz.InitButton(_viewDataQuizzes[i]);
+            buttonQuiz.InitButton(_viewDataQuizzes[i], quizUserData.quizUserResults[i]);
 
             _buttonQuizzes.Add(buttonQuiz);
         }
