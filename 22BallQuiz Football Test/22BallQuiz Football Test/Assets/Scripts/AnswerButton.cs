@@ -32,11 +32,14 @@ public class AnswerButton : MonoBehaviour
 
     private State currentState;
 
+    public static bool isActive = false;
+
     private void Awake()
     {
         _thisButton.onClick.AddListener(() =>
         {
-            AppHandler.Instance.ChoiceAnswerButton(_numberAnswer, this);
+            if (isActive)
+                AppHandler.Instance.ChoiceAnswerButton(_numberAnswer, this);
         });
     }
 
@@ -67,7 +70,7 @@ public class AnswerButton : MonoBehaviour
     public void SetTextAnswer(string answerString)
     {
         _textAnswer.text = answerString;
-
+        isActive = true;
         ChangeState(State.None);
     }
 
