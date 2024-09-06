@@ -109,6 +109,11 @@ public class ScreenHome : MonoBehaviour
             buttonQuiz.InitButton(_viewDataQuizzes[i], quizUserData.quizUserResults[i]);
 
             _buttonQuizzes.Add(buttonQuiz);
+
+            if (i == 3 || i == _viewDataQuizzes.Length - 1)
+            {
+                container.GetChild(0).transform.SetAsLastSibling();
+            }
         }
 
         ScreenSettings.OnChangeMode += ChangeMode;
