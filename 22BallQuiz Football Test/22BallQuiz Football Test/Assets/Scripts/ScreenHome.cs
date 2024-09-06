@@ -48,7 +48,7 @@ public class ScreenHome : MonoBehaviour
 
         _playBtn.onClick.AddListener(() =>
         {
-            AppHandler.Instance.SetQuestion(0);
+            AppHandler.Instance.SetQuestion(4);
             ScreensHandler.OpenScreen(ScreensHandler.ScreenName.QuestionScreen);
         });
 
