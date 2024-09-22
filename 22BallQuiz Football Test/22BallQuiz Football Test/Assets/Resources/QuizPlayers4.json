@@ -1,0 +1,107 @@
+{
+    "quiz": {
+        "number": 12,
+        "questions": [
+            {
+                "textQuestion": "Which French player won the 1998 FIFA World Cup Golden Boot?",
+                "numberTrueAnswer": 2,
+                "answers": [
+                    { "textAnswer": "Thierry Henry" },
+                    { "textAnswer": "Zinedine Zidane" },
+                    { "textAnswer": "David Trezeguet" },
+                    { "textAnswer": "Ronaldo Nazario" }
+                ]
+            },
+            {
+                "textQuestion": "Which country did Eusebio represent in international football?",
+                "numberTrueAnswer": 1,
+                "answers": [
+                    { "textAnswer": "Portugal" },
+                    { "textAnswer": "Brazil" },
+                    { "textAnswer": "Angola" },
+                    { "textAnswer": "Mozambique" }
+                ]
+            },
+            {
+                "textQuestion": "Who captained Spain to victory in the 2010 FIFA World Cup?",
+                "numberTrueAnswer": 0,
+                "answers": [
+                    { "textAnswer": "Iker Casillas" },
+                    { "textAnswer": "Sergio Ramos" },
+                    { "textAnswer": "Andres Iniesta" },
+                    { "textAnswer": "Xavi Hernandez" }
+                ]
+            },
+            {
+                "textQuestion": "Which legendary player was nicknamed 'O Canhão da Madeira' (The Cannon from Madeira)?",
+                "numberTrueAnswer": 0,
+                "answers": [
+                    { "textAnswer": "Cristiano Ronaldo" },
+                    { "textAnswer": "Ricardo Quaresma" },
+                    { "textAnswer": "Luis Figo" },
+                    { "textAnswer": "Deco" }
+                ]
+            },
+            {
+                "textQuestion": "Which player scored a hat-trick in the 1966 FIFA World Cup final?",
+                "numberTrueAnswer": 3,
+                "answers": [
+                    { "textAnswer": "Bobby Charlton" },
+                    { "textAnswer": "Franz Beckenbauer" },
+                    { "textAnswer": "Pele" },
+                    { "textAnswer": "Geoff Hurst" }
+                ]
+            },
+            {
+                "textQuestion": "Which country did Lothar Matthäus represent?",
+                "numberTrueAnswer": 0,
+                "answers": [
+                    { "textAnswer": "Germany" },
+                    { "textAnswer": "Brazil" },
+                    { "textAnswer": "Netherlands" },
+                    { "textAnswer": "Argentina" }
+                ]
+            },
+            {
+                "textQuestion": "Which player was known as 'The Black Panther'?",
+                "numberTrueAnswer": 2,
+                "answers": [
+                    { "textAnswer": "Didier Drogba" },
+                    { "textAnswer": "Samuel Eto'o" },
+                    { "textAnswer": "Eusebio" },
+                    { "textAnswer": "George Weah" }
+                ]
+            },
+            {
+                "textQuestion": "Which player holds the record for most appearances for the Italian national team?",
+                "numberTrueAnswer": 1,
+                "answers": [
+                    { "textAnswer": "Paolo Maldini" },
+                    { "textAnswer": "Gianluigi Buffon" },
+                    { "textAnswer": "Francesco Totti" },
+                    { "textAnswer": "Fabio Cannavaro" }
+                ]
+            },
+            {
+                "textQuestion": "Which English player is known for scoring a hat-trick against Germany in the 1966 World Cup final?",
+                "numberTrueAnswer": 0,
+                "answers": [
+                    { "textAnswer": "Geoff Hurst" },
+                    { "textAnswer": "Bobby Moore" },
+                    { "textAnswer": "Bobby Charlton" },
+                    { "textAnswer": "Alan Shearer" }
+                ]
+            },
+            {
+                "textQuestion": "Which Spanish player scored the winning goal in the UEFA Euro 2008 final?",
+                "numberTrueAnswer": 3,
+                "answers": [
+                    { "textAnswer": "Sergio Ramos" },
+                    { "textAnswer": "David Villa" },
+                    { "textAnswer": "Fernando Torres" },
+                    { "textAnswer": "Cesc Fabregas" }
+                ]
+            }
+        ]
+    }
+}

@@ -1,0 +1,107 @@
+{
+    "quiz": {
+        "number": 9,
+        "questions": [
+            {
+                "textQuestion": "Which player won the Ballon d'Or the most times?",
+                "numberTrueAnswer": 0,
+                "answers": [
+                    { "textAnswer": "Lionel Messi" },
+                    { "textAnswer": "Cristiano Ronaldo" },
+                    { "textAnswer": "Michel Platini" },
+                    { "textAnswer": "Johan Cruyff" }
+                ]
+            },
+            {
+                "textQuestion": "Which player holds the record for most goals scored in a single FIFA World Cup?",
+                "numberTrueAnswer": 3,
+                "answers": [
+                    { "textAnswer": "Pele" },
+                    { "textAnswer": "Gerd Müller" },
+                    { "textAnswer": "Ronaldo Nazario" },
+                    { "textAnswer": "Just Fontaine" }
+                ]
+            },
+            {
+                "textQuestion": "Which country did Zinedine Zidane represent?",
+                "numberTrueAnswer": 0,
+                "answers": [
+                    { "textAnswer": "France" },
+                    { "textAnswer": "Brazil" },
+                    { "textAnswer": "Portugal" },
+                    { "textAnswer": "Algeria" }
+                ]
+            },
+            {
+                "textQuestion": "Which legendary player is known as 'El Diego'?",
+                "numberTrueAnswer": 2,
+                "answers": [
+                    { "textAnswer": "Johan Cruyff" },
+                    { "textAnswer": "Lionel Messi" },
+                    { "textAnswer": "Diego Maradona" },
+                    { "textAnswer": "Romario" }
+                ]
+            },
+            {
+                "textQuestion": "Which Brazilian player is often referred to as 'O Rei' (The King)?",
+                "numberTrueAnswer": 1,
+                "answers": [
+                    { "textAnswer": "Ronaldo Nazario" },
+                    { "textAnswer": "Pele" },
+                    { "textAnswer": "Zico" },
+                    { "textAnswer": "Garrincha" }
+                ]
+            },
+            {
+                "textQuestion": "Which player is often referred to as 'The King of Football'?",
+                "numberTrueAnswer": 1,
+                "answers": [
+                    { "textAnswer": "Cristiano Ronaldo" },
+                    { "textAnswer": "Pele" },
+                    { "textAnswer": "Maradona" },
+                    { "textAnswer": "Lionel Messi" }
+                ]
+            },
+            {
+                "textQuestion": "Which country did Johan Cruyff represent in international football?",
+                "numberTrueAnswer": 0,
+                "answers": [
+                    { "textAnswer": "Netherlands" },
+                    { "textAnswer": "Belgium" },
+                    { "textAnswer": "Germany" },
+                    { "textAnswer": "Italy" }
+                ]
+            },
+            {
+                "textQuestion": "Which player won the Golden Boot in the 1986 FIFA World Cup?",
+                "numberTrueAnswer": 2,
+                "answers": [
+                    { "textAnswer": "Gary Lineker" },
+                    { "textAnswer": "Diego Maradona" },
+                    { "textAnswer": "Michel Platini" },
+                    { "textAnswer": "Paolo Rossi" }
+                ]
+            },
+            {
+                "textQuestion": "Which Brazilian player won the World Cup 3 times?",
+                "numberTrueAnswer": 0,
+                "answers": [
+                    { "textAnswer": "Pele" },
+                    { "textAnswer": "Ronaldo Nazario" },
+                    { "textAnswer": "Ronaldinho" },
+                    { "textAnswer": "Rivaldo" }
+                ]
+            },
+            {
+                "textQuestion": "Who is the youngest player to score in a FIFA World Cup final?",
+                "numberTrueAnswer": 1,
+                "answers": [
+                    { "textAnswer": "Pelé" },
+                    { "textAnswer": "Kylian Mbappe" },
+                    { "textAnswer": "Lionel Messi" },
+                    { "textAnswer": "Michael Owen" }
+                ]
+            }
+        ]
+    }
+}

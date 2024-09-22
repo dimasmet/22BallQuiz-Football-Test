@@ -1,0 +1,107 @@
+{
+    "quiz": {
+        "number": 10,
+        "questions": [
+            {
+                "textQuestion": "Which player is famous for his 'Hand of God' goal?",
+                "numberTrueAnswer": 1,
+                "answers": [
+                    { "textAnswer": "Diego Maradona" },
+                    { "textAnswer": "Lionel Messi" },
+                    { "textAnswer": "Ronaldinho" },
+                    { "textAnswer": "Zinedine Zidane" }
+                ]
+            },
+            {
+                "textQuestion": "Who is the all-time top scorer for the Portugal national team?",
+                "numberTrueAnswer": 0,
+                "answers": [
+                    { "textAnswer": "Cristiano Ronaldo" },
+                    { "textAnswer": "Luis Figo" },
+                    { "textAnswer": "Eusebio" },
+                    { "textAnswer": "Pauleta" }
+                ]
+            },
+            {
+                "textQuestion": "Which club did Thierry Henry famously play for in the Premier League?",
+                "numberTrueAnswer": 3,
+                "answers": [
+                    { "textAnswer": "Chelsea" },
+                    { "textAnswer": "Manchester United" },
+                    { "textAnswer": "Liverpool" },
+                    { "textAnswer": "Arsenal" }
+                ]
+            },
+            {
+                "textQuestion": "Which German player won the World Cup as both a player and a manager?",
+                "numberTrueAnswer": 1,
+                "answers": [
+                    { "textAnswer": "Oliver Kahn" },
+                    { "textAnswer": "Franz Beckenbauer" },
+                    { "textAnswer": "Miroslav Klose" },
+                    { "textAnswer": "Lothar Matthäus" }
+                ]
+            },
+            {
+                "textQuestion": "Which player is often referred to as 'The Phenomenon'?",
+                "numberTrueAnswer": 2,
+                "answers": [
+                    { "textAnswer": "Neymar" },
+                    { "textAnswer": "Romario" },
+                    { "textAnswer": "Ronaldo Nazario" },
+                    { "textAnswer": "Pele" }
+                ]
+            },
+            {
+                "textQuestion": "Which Brazilian legend is known for scoring over 1000 career goals?",
+                "numberTrueAnswer": 1,
+                "answers": [
+                    { "textAnswer": "Zico" },
+                    { "textAnswer": "Pele" },
+                    { "textAnswer": "Romario" },
+                    { "textAnswer": "Rivaldo" }
+                ]
+            },
+            {
+                "textQuestion": "Which player scored 5 goals in one Champions League match?",
+                "numberTrueAnswer": 0,
+                "answers": [
+                    { "textAnswer": "Lionel Messi" },
+                    { "textAnswer": "Cristiano Ronaldo" },
+                    { "textAnswer": "Robert Lewandowski" },
+                    { "textAnswer": "Zlatan Ibrahimovic" }
+                ]
+            },
+            {
+                "textQuestion": "Which Italian striker won the Golden Boot in the 1990 FIFA World Cup?",
+                "numberTrueAnswer": 1,
+                "answers": [
+                    { "textAnswer": "Francesco Totti" },
+                    { "textAnswer": "Salvatore Schillaci" },
+                    { "textAnswer": "Paolo Rossi" },
+                    { "textAnswer": "Gianluca Vialli" }
+                ]
+            },
+            {
+                "textQuestion": "Which Dutch player is known for his 'Cruyff Turn' move?",
+                "numberTrueAnswer": 0,
+                "answers": [
+                    { "textAnswer": "Johan Cruyff" },
+                    { "textAnswer": "Ruud Gullit" },
+                    { "textAnswer": "Marco van Basten" },
+                    { "textAnswer": "Arjen Robben" }
+                ]
+            },
+            {
+                "textQuestion": "Which club did Zinedine Zidane join after leaving Juventus?",
+                "numberTrueAnswer": 2,
+                "answers": [
+                    { "textAnswer": "AC Milan" },
+                    { "textAnswer": "Manchester United" },
+                    { "textAnswer": "Real Madrid" },
+                    { "textAnswer": "Barcelona" }
+                ]
+            }
+        ]
+    }
+}

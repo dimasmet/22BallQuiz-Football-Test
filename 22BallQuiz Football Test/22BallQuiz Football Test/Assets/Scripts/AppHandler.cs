@@ -43,10 +43,15 @@ public class AppHandler : MonoBehaviour
         GetQuizFromFile("QuizChamp3", quizsChampionship);
         GetQuizFromFile("QuizChamp4", quizsChampionship);
 
+        GetQuizFromFile("QuizPlayers1", quizsPlayers);
+        GetQuizFromFile("QuizPlayers2", quizsPlayers);
+        GetQuizFromFile("QuizPlayers3", quizsPlayers);
+        GetQuizFromFile("QuizPlayers4", quizsPlayers);
     }
 
     [SerializeField] private List<Quiz> quizsFootballClub;
     [SerializeField] private List<Quiz> quizsChampionship;
+    [SerializeField] private List<Quiz> quizsPlayers;
 
     [SerializeField] private ScreenQuestion _screenQuestion;
     [SerializeField] private ScreenResult _screenResult;
@@ -88,8 +93,16 @@ public class AppHandler : MonoBehaviour
             currentQuiz = quizsFootballClub[numberQuiz];
         else
         {
-            int number = numberQuiz - 4;
-            currentQuiz = quizsFootballClub[number];
+            if (numberQuiz >= 4 && numberQuiz < 8)
+            {
+                int number = numberQuiz - 4;
+                currentQuiz = quizsFootballClub[number];
+            }
+            else
+            {
+                int number = numberQuiz - 8;
+                currentQuiz = quizsPlayers[number];
+            }
         }
         score = 0;
         numberQuestion = -1;

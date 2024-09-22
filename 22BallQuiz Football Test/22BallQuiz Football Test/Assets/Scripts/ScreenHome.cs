@@ -18,7 +18,8 @@ public class ScreenHome : MonoBehaviour
     public enum TypeQuiz
     {
         Football,
-        Championship
+        Championship,
+        Players
     }
 
     [SerializeField] private ButtonQuiz _prefabButtonQuiz;
@@ -28,12 +29,16 @@ public class ScreenHome : MonoBehaviour
 
     [SerializeField] private Transform _containerFootballQuiz;
     [SerializeField] private Transform _containerChampionshipQuiz;
+    [SerializeField] private Transform _containerPlayersQuiz;
 
     [SerializeField] private ButtonType _typeFootballBtn;
     [SerializeField] private ButtonType _typeChampionshipBtn;
+    [SerializeField] private ButtonType _typePlayersBtn;
 
     [SerializeField] private Button _playBtn;
     [SerializeField] private Button _settingsBtn;
+
+    [SerializeField] private Transform _infoBlock;
 
     [Header("theme")]
     [SerializeField] private Text _title;
@@ -45,6 +50,7 @@ public class ScreenHome : MonoBehaviour
     {
         _typeFootballBtn.SetButton(this, TypeQuiz.Football);
         _typeChampionshipBtn.SetButton(this, TypeQuiz.Championship);
+        _typePlayersBtn.SetButton(this, TypeQuiz.Players);
 
         _playBtn.onClick.AddListener(() =>
         {
@@ -88,6 +94,7 @@ public class ScreenHome : MonoBehaviour
 
         _typeFootballBtn.ChangeModeTheme(mode);
         _typeChampionshipBtn.ChangeModeTheme(mode);
+        _typePlayersBtn.ChangeModeTheme(mode);
     }
 
     public void StartInit(QuizUserData quizUserData)
@@ -101,7 +108,14 @@ public class ScreenHome : MonoBehaviour
             if (i < 4)
                 container = _containerChampionshipQuiz.GetChild(0).GetChild(0);
             else
-                container = _containerFootballQuiz.GetChild(0).GetChild(0);
+            {
+                if (i >= 4 && i < 8)
+                    container = _containerFootballQuiz.GetChild(0).GetChild(0);
+                else
+                {
+                    container = _containerPlayersQuiz.GetChild(0).GetChild(0);
+                }
+            }
 
             ButtonQuiz buttonQuiz = Instantiate(_prefabButtonQuiz, container);
             buttonQuiz.gameObject.SetActive(true);
@@ -110,11 +124,13 @@ public class ScreenHome : MonoBehaviour
 
             _buttonQuizzes.Add(buttonQuiz);
 
-            if (i == 3 || i == _viewDataQuizzes.Length - 1)
+            /*if (i == 4 || i == _viewDataQuizzes.Length - 1)
             {
                 container.GetChild(0).transform.SetAsLastSibling();
-            }
+            }*/
         }
+
+        ChoiceType(TypeQuiz.Football);
 
         ScreenSettings.OnChangeMode += ChangeMode;
     }
@@ -130,17 +146,39 @@ public class ScreenHome : MonoBehaviour
         {
             case TypeQuiz.Football:
                 _containerFootballQuiz.gameObject.SetActive(true);
+                Vector3 pos = _containerFootballQuiz.GetChild(0).GetChild(0).position;
+                _containerFootballQuiz.GetChild(0).GetChild(0).position = new Vector3(pos.x, 0, pos.z);
+                _infoBlock.transform.SetParent(_containerFootballQuiz.GetChild(0).GetChild(0));
                 _containerChampionshipQuiz.gameObject.SetActive(false);
+                _containerPlayersQuiz.gameObject.SetActive(false);
 
                 _typeFootballBtn.ActiveType(true);
                 _typeChampionshipBtn.ActiveType(false);
+                _typePlayersBtn.ActiveType(false);
                 break;
             case TypeQuiz.Championship:
                 _containerFootballQuiz.gameObject.SetActive(false);
                 _containerChampionshipQuiz.gameObject.SetActive(true);
+                Vector3 pos2 = _containerFootballQuiz.GetChild(0).GetChild(0).position;
+                _containerChampionshipQuiz.GetChild(0).GetChild(0).position = new Vector3(pos2.x, 0, pos2.z);
+                _infoBlock.transform.SetParent(_containerChampionshipQuiz.GetChild(0).GetChild(0));
+                _containerPlayersQuiz.gameObject.SetActive(false);
 
                 _typeFootballBtn.ActiveType(false);
                 _typeChampionshipBtn.ActiveType(true);
+                _typePlayersBtn.ActiveType(false);
+                break;
+            case TypeQuiz.Players:
+                _containerFootballQuiz.gameObject.SetActive(false);
+                _containerChampionshipQuiz.gameObject.SetActive(false);
+                _containerPlayersQuiz.gameObject.SetActive(true);
+                Vector3 pos3 = _containerFootballQuiz.GetChild(0).GetChild(0).position;
+                _containerPlayersQuiz.GetChild(0).GetChild(0).position = new Vector3(pos3.x, 0, pos3.z);
+                _infoBlock.transform.SetParent(_containerPlayersQuiz.GetChild(0).GetChild(0));
+
+                _typeFootballBtn.ActiveType(false);
+                _typeChampionshipBtn.ActiveType(false);
+                _typePlayersBtn.ActiveType(true);
                 break;
         }
     }
